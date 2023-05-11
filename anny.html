@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <title>popstar</title>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta property="og:description" content="idk my website" />
+   <meta property="og:image" content="https://cdn.discordapp.com/emojis/782632694428598283.gif" />
+   <meta name="theme-color" content="#fffff1" />
+   <meta property="og:title" content="anny <$" />
+   <meta property="og:url" content="https://popstar.fun/" />
+
+   <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/782632694428598283.gif">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="mainclass">
+   <div class="page-bg2"></div>
+   <div class="container">
+      <img class="avatar" src="https://media.discordapp.net/attachments/780004113756192779/1022205663339892836/a182c0b1e710ff961b8749c50701164c.jpg" />
+      <h1>Anny<img src="./img/verified.svg" class="verified"></img>
+      </h1>
+      <ul>
+         <li>
+            <a class="icon-href" href="https://twitter.com/bosetar" target="_blank">
+               <img class="icon-img" src="./img/twitter.svg">
+               <span class="icon-text">Twitter</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</body>
+
+</html>
+<script>
+   function loaded() {
+      setInterval(loop, 400)
+   }
+
+   document.addEventListener ? document.addEventListener("DOMContentLoaded", function () {
+      loaded()
+   }) : document.attachEvent && document.attachEvent("onreadystatechange", function () {
+      loaded()
+   });
+
+   var x = 0;
+   var titleText = ["popstar", "dot", "fun"];
+
+   function loop() {
+      document.getElementsByTagName("title")[0].innerHTML = titleText[x++ % titleText.length]
+   }
+</script>
